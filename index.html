@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Your Name] - Portfolio</title>
+  <meta name="description" content="Portfolio of [Your Name], a web developer specializing in modern, responsive websites." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">[Your Name]</div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>Hi, I'm <strong>[Your Name]</strong>, a passionate web developer focused on building accessible, performant, and modern websites.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & Semantic Markup</li>
+        <li>CSS3 (Flexbox, Grid, Animations)</li>
+        <li>JavaScript (ES6+, DOM Manipulation)</li>
+        <li>React.js & Component-Based Architecture</li>
+        <li>Git & Version Control</li>
+        <li>Responsive & Mobile-First Design</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <img src="project1.png" alt="Screenshot of Interactive Portfolio" loading="lazy" />
+          <div class="project-content">
+            <h3>Interactive Portfolio</h3>
+            <p>A responsive portfolio with smooth scrolling, animations, and mobile-friendly navigation.</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+              <a href="https://yourusername.github.io/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more project cards here -->
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://formspree.io/f/mrgrwvok" method="POST" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="your.email@example.com" required />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div id="form-message" role="alert" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
